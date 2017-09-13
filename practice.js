@@ -7,3 +7,7 @@ var inventors = [
 	{first: 'Nicolaus', last: 'Copernicus', year: '1473', passed: '1543'},
 	{first: 'Max', last: 'Planck', year: '1858', passed: '1947'},
 ];
+
+var people = [ 'Jamdagani, Naveen', 'Jamdagani, Ankush', 'Beck, Glenn', 'Becker, Call',
+'John, Adams', 'Benn, Tony', 'Wayne, Bruce'
+];
