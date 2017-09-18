@@ -47,3 +47,16 @@ var oldest = inventors.sort(function(a,b) {
 
 //console.table(oldest);
 
+//Array.prototype.reduce()
+//How many years did all the inventors live?
+/*var totalYears = 0;
+for(i = 0; i < inventors.length; i++) {
+	var a = inventors[i].passed - inventors[i].year;
+	totalYears += a;
+}*/
+
+var totalYears = inventors.reduce(function(total, inventor) {
+	return total + (inventor.passed - inventor.year);
+},0);//Doubt????
+//console.log(totalYears);
+
