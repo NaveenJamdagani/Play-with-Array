@@ -22,5 +22,15 @@ var fifteen = inventors.filter(function(inventor) {
 	}
 });
 
-console.log(fifteen);
-console.table(fifteen);
+//console.log(fifteen);
+//console.table(fifteen);
+
+//Array.prototype.map
+//2. Give us an array of the inventors first and last names
+
+var fullName = inventors.map(function(inventor) {
+	var a = inventor.first + " " + inventor.last;
+	return a;
+});
+
+console.log(fullName);
