@@ -60,3 +60,26 @@ var totalYears = inventors.reduce(function(total, inventor) {
 },0);//Doubt????
 //console.log(totalYears);
 
+//Sort the inventors by years lived
+var oldest = inventors.sort(function(a, b) {
+	var aLived = a.passed - a.year; 
+	var bLived = b.passed - b.year;
+	if(aLived > bLived)
+	{
+		return -1;
+	}
+	else
+	{
+		return 1;
+	}
+});
+//console.table(oldest);
+
+//Create a list of Boulevards in Paris that contain 'de' anywhere in the name
+//https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+var links = document.querySelector(".mw-category-group a");
+console.log(links);
+
+
+
